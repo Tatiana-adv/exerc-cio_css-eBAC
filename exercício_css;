@@ -1,40 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News Portal</title>
+  <title>Meu portal de notícias</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d7f5d0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .section-title {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 1rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content small {
+      color: gray;
+    }
+    .card-content h3 {
+      margin: 0.5rem 0;
+    }
+    .card-content p {
+      font-size: 0.9rem;
+    }
+    .card-content a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background-color: green;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>News Portal</h1>
+    <h1>Meu portal de notícias</h1>
+    <nav>
+      <a href="#">Esportes</a>
+      <a href="#">Economia</a>
+    </nav>
   </header>
 
   <main>
-    <section class="card politics">
-      <h2>Politics</h2>
-      <p>The Prime Minister announced new economic policies during the national assembly, aiming to tackle inflation and boost job growth.</p>
-    </section>
+    <h2 class="section-title">Esportes</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2014/06/19/15/18/the-ball-371277_960_720.jpg" alt="Futebol">
+        <div class="card-content">
+          <small>13/07/2022 às 13:25</small>
+          <h3>Grande clássico na noite de hoje</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci optio placeat?</p>
+          <a href="#">Ler mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2014/10/03/16/30/american-football-471216_960_720.jpg" alt="Superbowl">
+        <div class="card-content">
+          <small>11/07/2022 às 13:25</small>
+          <h3>Noite do Superbowl</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci optio placeat?</p>
+          <a href="#">Ler mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/20/basketball-1867326_960_720.jpg" alt="NBA">
+        <div class="card-content">
+          <small>13/07/2022 às 13:25</small>
+          <h3>Notícia sobre a NBA</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci optio placeat?</p>
+          <a href="#">Ler mais</a>
+        </div>
+      </div>
+    </div>
 
-    <section class="card sports">
-      <h2>Sports</h2>
-      <p>The national team won the championship after a tense penalty shootout, securing their first victory in over a decade.</p>
-    </section>
+    <h2 class="section-title">Política</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/02/01/10/27/people-2020897_960_720.jpg" alt="Política">
+        <div class="card-content">
+          <small>12/04/2025 às 10:00</small>
+          <h3>Novas políticas econômicas</h3>
+          <p>O primeiro-ministro anunciou novas políticas econômicas para combater a inflação.</p>
+          <a href="#">Ler mais</a>
+        </div>
+      </div>
+    </div>
 
-    <section class="card entertainment">
-      <h2>Entertainment</h2>
-      <p>A new fantasy series has taken over streaming platforms, receiving rave reviews and millions of viewers worldwide.</p>
-    </section>
-
-    <section class="card technology">
-      <h2>Technology</h2>
-      <p>A tech startup just launched the world’s first AI-powered tutor that adapts to each student’s learning pace and style.</p>
-    </section>
+    <h2 class="section-title">Tecnologia</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/01/08/18/29/startup-593341_960_720.jpg" alt="Tecnologia">
+        <div class="card-content">
+          <small>12/04/2025 às 09:30</small>
+          <h3>Startup lança tutor com IA</h3>
+          <p>Uma startup lançou um tutor com IA que se adapta ao ritmo e estilo de aprendizagem.</p>
+          <a href="#">Ler mais</a>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 News Portal</p>
+    <p>© Portal de Notícias 2025</p>
   </footer>
 </body>
 </html>
