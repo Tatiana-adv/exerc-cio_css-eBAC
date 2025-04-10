@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>News Portal</h1>
+  </header>
+
+  <main>
+    <section class="card politics">
+      <h2>Politics</h2>
+      <p>The Prime Minister announced new economic policies during the national assembly, aiming to tackle inflation and boost job growth.</p>
+    </section>
+
+    <section class="card sports">
+      <h2>Sports</h2>
+      <p>The national team won the championship after a tense penalty shootout, securing their first victory in over a decade.</p>
+    </section>
+
+    <section class="card entertainment">
+      <h2>Entertainment</h2>
+      <p>A new fantasy series has taken over streaming platforms, receiving rave reviews and millions of viewers worldwide.</p>
+    </section>
+
+    <section class="card technology">
+      <h2>Technology</h2>
+      <p>A tech startup just launched the world’s first AI-powered tutor that adapts to each student’s learning pace and style.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 News Portal</p>
+  </footer>
+</body>
+</html>
