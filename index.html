@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho de Apresentação</title>
+  <link rel="stylesheet" href="estilo.css"> <!-- Se você for separar o CSS -->
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Títulos das seções */
+    .section-title {
+      margin: 40px 20px 20px;
+      font-size: 1.8rem;
+      color: #004080;
+    }
+
+    /* Container de cartões */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+
+    /* Cartão individual */
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content small {
+      display: block;
+      margin-bottom: 8px;
+      color: #888;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #004080;
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .card-content a {
+      color: #004080;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trabalho de Desenvolvimento Web</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">Meus Projetos</h2>
+
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Imagem Projeto 1">
+      <div class="card-content">
+        <small>Web Design</small>
+        <h3>Projeto Portfólio</h3>
+        <p>Um site responsivo desenvolvido com HTML, CSS e JavaScript.</p>
+        <a href="#">Ver mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Imagem Projeto 2">
+      <div class="card-content">
+        <small>Desenvolvimento</small>
+        <h3>Sistema de Login</h3>
+        <p>Projeto funcional de autenticação com PHP e MySQL.</p>
+        <a href="#">Ver mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Imagem Projeto 3">
+      <div class="card-content">
+        <small>Design Gráfico</small>
+        <h3>Identidade Visual</h3>
+        <p>Criação de logotipo e identidade visual para empresas.</p>
+        <a href="#">Ver mais</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+  </footer>
+
+</body>
+</html>
+
